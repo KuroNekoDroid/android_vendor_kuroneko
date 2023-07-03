@@ -14,7 +14,9 @@ PRODUCT_PRODUCT_PROPERTIES += \
 
 # Apps
 PRODUCT_PACKAGES += \
-    Backgrounds \
+    Aperture \
+    Eleven \
+    Etar \
     ExactCalculator \
     Jelly
 
