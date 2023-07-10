@@ -1,7 +1,7 @@
 # Allow vendor/extra to override any property by setting it first
 $(call inherit-product-if-exists, vendor/extra/product.mk)
 
-PRODUCT_BRAND ?= LineageOS
+PRODUCT_BRAND ?= KuroNekoDroid
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 
@@ -89,6 +89,11 @@ PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
 
 # Disable vendor restrictions
 PRODUCT_RESTRICT_VENDOR_FILES := false
+
+# Enable whole-program R8 Java optimizations for SystemUI and system_server,
+# but also allow explicit overriding for testing and development.
+SYSTEM_OPTIMIZE_JAVA ?= true
+SYSTEMUI_OPTIMIZE_JAVA ?= true
 
 ifneq ($(TARGET_DISABLE_EPPE),true)
 # Require all requested packages to exist
