@@ -121,6 +121,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     SimpleDeviceConfig
 
+DONT_DEXPREOPT_PREBUILTS := true
+
 # Extra tools in Lineage
 PRODUCT_PACKAGES += \
     bash \
