@@ -96,8 +96,15 @@ PRODUCT_RESTRICT_VENDOR_FILES := false
 
 # Enable whole-program R8 Java optimizations for SystemUI and system_server,
 # but also allow explicit overriding for testing and development.
-SYSTEM_OPTIMIZE_JAVA ?= true
-SYSTEMUI_OPTIMIZE_JAVA ?= true
+SYSTEM_OPTIMIZE_JAVA := true
+SYSTEMUI_OPTIMIZE_JAVA := true
+
+OVERRIDE_TARGET_FLATTEN_APEX := true
+
+# Force disable updating of APEXes when flatten APEX flag is enabled
+ifeq ($(OVERRIDE_TARGET_FLATTEN_APEX),true)
+PRODUCT_PRODUCT_PROPERTIES += ro.apex.updatable=false
+endif
 
 ifneq ($(TARGET_DISABLE_EPPE),true)
 # Require all requested packages to exist
@@ -117,11 +124,11 @@ PRODUCT_PACKAGES += \
 # Lineage packages
 PRODUCT_PACKAGES += \
     LineageParts \
-    LineageSettingsProvider \
-    LineageSetupWizard
+    LineageSettingsProvider
 
-# Flatten APEXs for performance
-OVERRIDE_TARGET_FLATTEN_APEX := true
+# KuroNeko packages
+PRODUCT_PACKAGES += \
+    KuroNekoSetupWizard
 
 PRODUCT_COPY_FILES += \
     vendor/lineage/prebuilt/common/etc/init/init.lineage-updater.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.lineage-updater.rc
@@ -133,7 +140,7 @@ PRODUCT_PACKAGES += \
 
 DONT_DEXPREOPT_PREBUILTS := true
 
-# Extra tools in Lineage
+# Extra tools in KuroNekoDroid
 PRODUCT_PACKAGES += \
     bash \
     curl \
