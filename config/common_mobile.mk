@@ -14,6 +14,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
 
 # Apps
 PRODUCT_PACKAGES += \
+    Backgrounds \
     Aperture \
     Eleven \
     Etar \
@@ -21,9 +22,6 @@ PRODUCT_PACKAGES += \
     Jelly
 
 PRODUCT_PACKAGES += \
-    TrebuchetQuickStep
-
-PRODUCT_DEXPREOPT_SPEED_APPS += \
     TrebuchetQuickStep
 
 # Charger
