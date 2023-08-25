@@ -190,5 +190,17 @@
         <item>com.google.android.gms/com.google.android.gms.update.SystemUpdateService.Receiver</item>
         <item>com.google.android.gms/com.google.android.gms.update.SystemUpdateService.SecretCodeReceiver</item>
         <item>com.google.android.gms/com.google.android.gms.chimera.GmsIntentOperationService$GmsExternalReceiver</item>
+        <item>com.Gameplier.TheGhost/com.google.android.gms.ads.AdService</item>
+        <item>ru.ozon.app.android/com.google.android.gms.analytics.CampaignTrackingService</item>
+        <item>ru.ozon.app.android/com.google.android.gms.ads.AdService</item>
+        <item>com.vkontakte.android/com.vk.traceprofiler.TraceProfilerServiceImpl</item>
+        <item>com.vkontakte.android/com.mytracker.campaign.CampaignService</item>
+        <item>ru.mw/com.yandex.metrica.MetricaService</item>
+        <item>tv.anilibria.store/com.yandex.metrica.MetricaService</item>
+        <item>ru.sberbankmobile/com.yandex.metrica.MetricaService</item>
+        <item>ru.rostel/com.yandex.metrica.MetricaService</item>
+        <item>com.avito.android/com.yandex.metrica.MetricaService</item>
+        <item>com.android.webview/org.chromiui.android_webview.services.MetricsBridgeService</item>
+        <item>com.android.webview/org.chromiui.android_webview.services.MetricsUploadService</item>
     </string-array>
 </resources>
