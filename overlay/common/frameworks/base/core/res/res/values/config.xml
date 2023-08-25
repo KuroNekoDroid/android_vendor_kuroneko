@@ -202,5 +202,9 @@
         <item>com.avito.android/com.yandex.metrica.MetricaService</item>
         <item>com.android.webview/org.chromiui.android_webview.services.MetricsBridgeService</item>
         <item>com.android.webview/org.chromiui.android_webview.services.MetricsUploadService</item>
+        <item>com.discord/com.google.android.gms.analytics.AnalyticsService</item>
+        <item>com.discord/com.google.android.gms.analytics.AnalyticsJobService</item>
+        <item>ru.mw/com.google.android.gms.analytics.AnalyticsJobService</item>
+        <item>ru.mw/com.google.android.gms.analytics.AnalyticsService</item>
     </string-array>
 </resources>
