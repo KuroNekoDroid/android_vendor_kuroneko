@@ -27,6 +27,11 @@ ART_BUILD_HOST_DEBUG := false
 WITH_DEXPREOPT_DEBUG_INFO := false
 DONT_DEXPREOPT_PREBUILTS := true
 
+# BLUR
+PRODUCT_SYSTEM_EXT_PROPERTIES += \
+    ro.sf.blurs_are_expensive=1 \
+    ro.surface_flinger.supports_background_blur=1
+
 # DEX2OAT
 USE_DEX2OAT_DEBUG := false
 
