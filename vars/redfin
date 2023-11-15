@@ -24,21 +24,21 @@ device_repos=(
 
 # Updated semi-manually via pixel/update-any-var.sh
 
-readonly build_id="TQ3A.230705.001"
+readonly build_id="UP1A.231105.001"
 
 # Updated automatically via pixel/update-device-vars.sh
 
-readonly prev_aosp_tag="android-13.0.0_r51"
-readonly aosp_tag="android-13.0.0_r61"
+readonly prev_aosp_tag="android-14.0.0_r1"
+readonly aosp_tag="android-14.0.0_r13"
 
-readonly build_number="10216780"
+readonly build_number="10817346"
 
-readonly image_url="https://dl.google.com/dl/android/aosp/redfin-tq3a.230705.001-factory-777b6f91.zip"
-readonly image_sha256="777b6f912f9661a3ec7e6169be653178a21bb6c7343b979ca2af97fb9e8fa802"
+readonly image_url="https://dl.google.com/dl/android/aosp/redfin-up1a.231105.001-factory-4e32c252.zip"
+readonly image_sha256="4e32c25205ac3969c75723b7b283d632cc1d209da4014aa8ee9e083110855475"
 
-readonly flash_url="https://flash.android.com/build/10216780?target=redfin-user&signed"
+readonly flash_url="https://flash.android.com/build/10817346?target=redfin-user&signed"
 
-readonly ota_url="https://dl.google.com/dl/android/aosp/redfin-ota-tq3a.230705.001-b600a937.zip"
-readonly ota_sha256="b600a937b82194bcca1253652f4fbfb66b2c6c65bbf7af6fad3464441d6ae379"
+readonly ota_url="https://dl.google.com/dl/android/aosp/redfin-ota-up1a.231105.001-cb2967ff.zip"
+readonly ota_sha256="cb2967ff065f205953b29e31ef9a598c7f35167d5ebabb5e79ee05efb05b5b9d"
 
-readonly security_patch="2023-07-05"
+readonly security_patch="2023-11-05"

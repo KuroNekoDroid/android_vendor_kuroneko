@@ -1,4 +1,4 @@
-# Pixel 6
+# Pixel Fold
 
 # Usage: ${firmware_partitions[@]}
 readonly firmware_partitions=(
@@ -15,7 +15,7 @@ readonly firmware_partitions=(
 
 # Usage: ${device_repos[@]}
 device_repos=(
-  # common repos in raven
+  device/google/felix
 )
 
 readonly fbpk_version="v2"
@@ -31,12 +31,12 @@ readonly aosp_tag="android-14.0.0_r14"
 
 readonly build_number="11010452"
 
-readonly image_url="https://dl.google.com/dl/android/aosp/oriole-up1a.231105.003-factory-74f703f2.zip"
-readonly image_sha256="74f703f2086bbd379e3bde628722256305caab4ab689d33d5a5ff617a33e3ca7"
+readonly image_url="https://dl.google.com/dl/android/aosp/felix-up1a.231105.003-factory-604afb3f.zip"
+readonly image_sha256="604afb3f39455ca7202ef3bf4fee60ff301b7b4f1742ea74f9716a5a98694cd0"
 
-readonly flash_url="https://flash.android.com/build/11010452?target=oriole-user&signed"
+readonly flash_url="https://flash.android.com/build/11010452?target=felix-user&signed"
 
-readonly ota_url="https://dl.google.com/dl/android/aosp/oriole-ota-up1a.231105.003-bb84d181.zip"
-readonly ota_sha256="bb84d181a5d601884d316e71e8941f998d8eee084760821a55c47e5e3a0fcea2"
+readonly ota_url="https://dl.google.com/dl/android/aosp/felix-ota-up1a.231105.003-0bea8fc6.zip"
+readonly ota_sha256="0bea8fc6ae437daae30895d9cef5bcfdad9bf7b27dd99ea46ed1b6e3d9ed8ae7"
 
 readonly security_patch="2023-11-01"

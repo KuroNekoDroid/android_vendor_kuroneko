@@ -32,6 +32,9 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
     TrebuchetQuickStep
 endif
 
+PRODUCT_PACKAGES += \
+    TrebuchetOverlay
+
 # Charger
 PRODUCT_PACKAGES += \
     charger_res_images
@@ -75,7 +78,8 @@ PRODUCT_PACKAGES += \
     IconShapeTaperedRectOverlay \
     IconShapeTeardropOverlay \
     IconShapeVesselOverlay \
-    LineageNavigationBarNoHint
+    LineageNavigationBarNoHint \
+    NavigationBarMode2ButtonOverlay
 
 # Media
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
