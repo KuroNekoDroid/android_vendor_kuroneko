@@ -13,6 +13,12 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.com.google.clientidbase=$(PRODUCT_GMS_CLIENTID_BASE)
 endif
 
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+	persist.vendor.radio.add_power_save=1 \
+	debug.sf.disable_client_composition_cache=0 \
+	ro.surface_flinger.supports_background_blur=1 \
+	debug.sf.predict_hwc_composition_strategy=0
+
 # Android GO optimizations
 PRODUCT_DEX_PREOPT_BOOT_IMAGE_PROFILE_LOCATION := frameworks/base/config/boot-image-profile.txt
 PRODUCT_USE_PROFILE_FOR_BOOT_IMAGE := true
@@ -154,8 +160,7 @@ PRODUCT_COPY_FILES += \
 
 # Config
 PRODUCT_PACKAGES += \
-    SimpleDeviceConfig \
-    SimpleSettingsConfig
+    SimpleDeviceConfig
 
 DONT_DEXPREOPT_PREBUILTS := true
 
