@@ -162,7 +162,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     SimpleDeviceConfig
 
-DONT_DEXPREOPT_PREBUILTS := true
 
 # Extra tools in KuroNekoDroid
 PRODUCT_PACKAGES += \
